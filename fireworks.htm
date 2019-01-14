@@ -1,6 +1,27 @@
-<html>
-<body style='background-color:black'>
-<canvas id='myCanvas' width='800' height='800'></canvas>
+<style>
+  body {background-color:black;}
+  table {counter-reset: rowNumber;font-family: "FreeMono", monospace; }
+  table tr {counter-increment: rowNumber;}
+  table tr td:first-child::before {
+      content: counter(rowNumber);
+      min-width: 1em;
+      margin-right: 0.5em;}
+  a {color: white;}
+  </style>
+  
+  <meta name="KeyWords" content="javascript java script programming coding tutorial how to code example fireworks">
+  <meta name="Description" content="Let's welcome 2019 with fireworksr - easy JavaScript tutorial">
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta property="og:image" content='https://i.imgur.com/eVhTgjy.png' />
+  <title>Let's welcome 2019 with fireworks - easy JavaScript tutorial</title>
+  </head>
+  <body>
+  <font face="Arial,Helvetica,Sans-Serif" color="white">
+  <center>
+  <br><br>
+  <h1>Let's welcome 2019 with fireworks!</h1>
+  <canvas id="myCanvas" width="800" height="500"></canvas><br><br>
+  
 <script>
 const max_fireworks = 5,
   max_sparks = 50;
